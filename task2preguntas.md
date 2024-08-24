@@ -1,7 +1,5 @@
 ## Task 2
 
-
-
 ### Análisis de los resultados de MCTS y Dyna-Q+
 
 #### a. Comparación de resultados de MCTS y Dyna-Q+
@@ -32,7 +30,7 @@ La naturaleza estocástica de FrozenLake introduce incertidumbre en la transici�
 
 - **Dyna-Q+**: La planificación en Dyna-Q+ le permite aprender sobre transiciones estocásticas al realizar actualizaciones basadas en experiencias reales y simuladas. Sin embargo, la estocasticidad también introduce incertidumbre en el número de pasos para completar una tarea, lo que podría explicar la alta variabilidad observada en la cantidad de pasos por episodio, incluso después de muchas iteraciones.
 
----
+![Average Reward] (./img/average_reward_per_episode)
 
 
 1. Estrategias de exploración:
@@ -60,3 +58,5 @@ a. En la implementación de Dyna-Q+, ¿cómo afecta el cambio de la cantidad de 
 En la implementación de Dyna-Q+, el aumento del número de pasos de planificación 'n' y de la bonificación de exploración generalmente mejorará la curva de aprendizaje y el rendimiento final. Un mayor 'n' permite al agente planificar más a fondo utilizando su modelo interno, mientras que una mayor bonificación de exploración lo incentiva a explorar estados menos conocidos. Sin embargo, existe un equilibrio, ya que valores excesivamente altos de estos parámetros pueden llevar a una exploración demasiado agresiva y afectar negativamente el aprendizaje.
 
 En una versión determinista del entorno FrozenLake-v1, se podrían requerir diferentes configuraciones de los parámetros de Dyna-Q+. La bonificación de exploración podría ser menor, ya que la aleatoriedad del entorno ya no sería un factor, y se podrían reducir los pasos de planificación 'n' sin afectar tanto el rendimiento.
+
+
