@@ -31,6 +31,8 @@ La naturaleza estocástica de FrozenLake introduce incertidumbre en la transici�
 - **Dyna-Q+**: La planificación en Dyna-Q+ le permite aprender sobre transiciones estocásticas al realizar actualizaciones basadas en experiencias reales y simuladas. Sin embargo, la estocasticidad también introduce incertidumbre en el número de pasos para completar una tarea, lo que podría explicar la alta variabilidad observada en la cantidad de pasos por episodio, incluso después de muchas iteraciones.
 
 ![Average Reward](./img/average_reward_per_episode.png)
+![Average Reward](./img/convergence_rate_per_episode.png)
+![Average Reward](./img/success_rate_per_episode.png)
 
 
 1. Estrategias de exploración:
